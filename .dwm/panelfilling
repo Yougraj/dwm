@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+while true; do
+    xsetroot -name "$(~/.dwm/nettraf)$(echo " | ")$(free -m  | grep ^Mem | tr -s ' ' | cut -d ' ' -f 3)$(echo " MB | Charge: ")$(cat /sys/class/power_supply/BAT0/capacity)$(echo " | ")$(date +%A" "%d" "%B" "%H:%M)"
+	sleep 1;
+done

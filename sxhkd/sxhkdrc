@@ -1,0 +1,28 @@
+
+XF86AudioMicMute
+    ~/.dwm/changevolume mute
+
+XF86AudioLowerVolume
+    ~/.dwm/changevolume down
+
+XF86AudioRaiseVolume
+    ~/.dwm/changevolume up
+
+XF86MonBrightnessUp
+    ~/.dwm/changebrightness up
+
+XF86MonBrightnessDown
+    ~/.dwm/changebrightness down
+
+super + n
+    ~/.dwm/nextwall 
+
+XF86AudioPlay
+    playerctl play-pause
+XF86AudioPause
+    playerctl play-pause
+XF86AudioNext
+    playerctl next
+XF86AudioPrev
+    playerctl previous
+
