@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sxhkd &
-xwallpaper --zoom ~/.config/swww/Catppuccin-Mocha/hanged_man_tree.jpg
+wal -R
 ~/.dwm/panelfilling &
 
 ######## MY picom :) ###################

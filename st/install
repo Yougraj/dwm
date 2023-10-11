@@ -1,5 +1,4 @@
 #!/bin/bash
 
-rm config.h
 sudo make uninstall
 sudo make clean install
