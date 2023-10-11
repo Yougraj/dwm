@@ -44,6 +44,8 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+    { "ncmpcpp",  NULL,       NULL,       0,            0,           -1 },
+    { "kitty",    NULL,       NULL,       0,            1,           -1, 360, 640 },
 };
 
 /* layout(s) */
@@ -93,6 +95,7 @@ static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_a,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
+    {MODKEY|ShiftMask,              XK_m,      spawn,          {.v = (const char*[]){ "kitty", "ncmpcpp", NULL}} },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
