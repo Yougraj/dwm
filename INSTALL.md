@@ -46,3 +46,10 @@ cd dmenu
 cd st
 ./install
 ```
+
+# Copy this file
+
+```bash
+cp -rf picom sxhkd wallpaper $HOME/.config
+cp -rf .zshrc .oh-my-zsh .dwm $HOME
+```
