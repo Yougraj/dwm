@@ -52,4 +52,5 @@ cd st
 ```bash
 cp -rf picom sxhkd wallpaper $HOME/.config
 cp -rf .zshrc .oh-my-zsh .dwm $HOME
+cp dwm.desktop /usr/share/xsessions/
 ```
