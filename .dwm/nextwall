@@ -1,6 +1,5 @@
 #!/bin/bash
-path="~/.config/swww/Catppuccin-Mocha"
-wall=$(find $path -name "*.jpg" -o -name "*.png" | shuf -n 1)
+wall=$(find ~/.config/wallpaper/ -type f -name "*.jpg" -o -name "*.png" | shuf -n 1)
 xwallpaper --zoom $wall
 wal -c
 wal -i $wall

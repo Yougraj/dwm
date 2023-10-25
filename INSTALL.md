@@ -20,6 +20,15 @@ apt install libx11-dev libxft-dev libxinerama-dev libxrandr-dev xinit
 dnf install libX11-devel libXft-devel libXinerama-devel  libXrandr-devel xorg-x11-xinit-session
 ```
 
+## Aditional requirements
+
+- sxhkd
+- picom
+- xwallpaper
+- pywal
+- xdotool
+- imagemagick
+
 ## python
 
 ```bash
