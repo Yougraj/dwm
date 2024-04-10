@@ -1,1 +1,1 @@
-
+[Install](INSTALL.md)
