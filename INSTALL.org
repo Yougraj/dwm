@@ -1,26 +1,24 @@
-# Requirements
+* Requirements
 
-## Arch
+** Arch
 
-```
+#+begin_src bash
 yay -S libX11 libxft libxinerama libxrandr xinit
 
-```
+#+end_src
 
-## Debian
-
-```bash
+** Debian
+#+begin_src bash 
 apt install build-essential
 apt install libx11-dev libxft-dev libxinerama-dev libxrandr-dev xinit
-```
+#+end_src
 
-## fedora
-
-```bash
+** fedora
+#+begin_src bash
 dnf install libX11-devel libXft-devel libXinerama-devel  libXrandr-devel xorg-x11-xinit-session
-```
+#+end_src
 
-## Aditional requirements
+** Aditional requirements
 
 - sxhkd
 - picom
@@ -29,37 +27,36 @@ dnf install libX11-devel libXft-devel libXinerama-devel  libXrandr-devel xorg-x1
 - xdotool
 - imagemagick
 
-## python
+* python
 
 ```bash
 pip install pywal # this will take the color scheme from wallpaper and apply in dmenu, dwm, st
 ```
+** Installation
 
-# Install the dwm
-
-```bash
+*** Install the dwm
+#+begin_src bash
 cd dwm
 ./install
-```
+#+end_src
 
-# Install the dmenu
-
-```bash
+*** Install the dmenu
+#+begin_src bash
 cd dmenu
 ./install
-```
+#+end_src
 
-# Install the st terminal
 
-```bash
+*** Install the st terminal
+#+begin_src bash
 cd st
 ./install
-```
+#+end_src
 
-# Copy this file
 
-```bash
+*** Copy this file
+#+begin_src bash
 cp -rf picom sxhkd wallpaper $HOME/.config
 cp -rf .zshrc .oh-my-zsh .dwm $HOME
 cp dwm.desktop /usr/share/xsessions/
-```
+#+end_src

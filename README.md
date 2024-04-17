@@ -1,2 +1,2 @@
 ## Installation Guide
-[Install](INSTALL.md)
+[Install](INSTALL.org)
