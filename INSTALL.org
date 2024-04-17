@@ -29,9 +29,10 @@ dnf install libX11-devel libXft-devel libXinerama-devel  libXrandr-devel xorg-x1
 
 * python
 
-```bash
+#+begin_src bash
 pip install pywal # this will take the color scheme from wallpaper and apply in dmenu, dwm, st
-```
+#+end_src
+
 ** Installation
 
 *** Install the dwm
