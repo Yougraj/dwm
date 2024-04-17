@@ -1,6 +1,18 @@
 #!/usr/bin/bash
 
 while true; do
-    xsetroot -name "$(~/.dwm/nettraf)$(echo " | ")$(free -m  | grep ^Mem | tr -s ' ' | cut -d ' ' -f 3)$(echo " MB | Charge: ")$(cat /sys/class/power_supply/BAT0/capacity)$(echo " | ")$(date +%A" "%d" "%B" "%H:%M)"
-	sleep 1;
+    networktrafic=$(~/.dwm/nettraf)
+    gaph=$(echo " | ")
+    volume=$(~/.dwm/showVolume)
+    brightness=$(~/.dwm/showBrightness)
+    memory=$(free -m | grep ^Mem | tr -s ' ' | cut -d ' ' -f 3)
+    battery=$(cat /sys/class/power_supply/BAT0/capacity)
+    nowtime=$(date +%A" "%d" "%B" "%H:%M)
+
+    output="$networktrafic$gaph$memory$(echo " MB | Charge: ")$battery$gaph$brightness$gaph$volume$gaph$nowtime$gaph"
+
+    xsetroot -name "$output"
+
+	sleep 0.4;
+
 done

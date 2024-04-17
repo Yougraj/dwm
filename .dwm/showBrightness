@@ -1,0 +1,5 @@
+#!/bin/bash
+
+brillo=$(brillo)
+
+printf "Brightness: ${brillo%.*}"

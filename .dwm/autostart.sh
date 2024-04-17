@@ -1,11 +1,10 @@
 #!/bin/bash
 
-/usr/lib/polkit-kde-authentication-agent-1 #change this to your own polkit
+/usr/lib/polkit-kde-authentication-agent-1 &
 sxhkd &
-wal -R
+wal -R &
 ~/.dwm/panelfilling &
-xrandr --mode 1920x1080
-
+xdotool key super+F5
 ######## MY picom :) ###################
 picom  -f &
 
